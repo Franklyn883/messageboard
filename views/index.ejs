@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <%- include ("partials/head.ejs") %>
+
+    <body>
+        <header><%- include ("partials/nav.ejs") %></header>
+        <main>
+            <section>
+                <h1>welcome to message board</h1>
+                <% messages.map(message => { %>
+                <div>
+                    <h3>Message:</h3>
+                    <p><%= message.text %></p>
+                    <p><%= message.user %></p>
+                    <p><%= message.added %></p>
+                </div>
+
+                <% }) %>
+            </section>
+        </main>
+
+        <script src="" async defer></script>
+    </body>
+</html>

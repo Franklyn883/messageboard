@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <%- include ("partials/head.ejs") %>
+    <body>
+        <header><%- include ("partials/nav.ejs") %></header>
+        <main>
+            <form method="post" action="/new">
+                <div>
+                    <label for="text"> Text:</label>
+                    <input
+                        type="text"
+                        id="text"
+                        name="text"
+                        placeholder="Enter your message here!!!"
+                        required
+                    />
+                </div>
+                <div>
+                    <label for="user"> user: </label>
+                    <input
+                        type="text"
+                        name="user"
+                        id="user"
+                        placeholder="Enter your user name"
+                        required
+                    />
+                </div>
+                <button>Submit</button>
+            </form>
+        </main>
+
+        <script src="" async defer></script>
+    </body>
+</html>
